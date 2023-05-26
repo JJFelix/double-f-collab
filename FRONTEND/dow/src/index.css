@@ -1,69 +1,133 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+/* Navbar styling */
+/* styling of the navabar section starts here 👇 */
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+/* Navbar container */
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
+nav {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #ffffff; /* Default background color */
+  color: #000000; /* Default text color */
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* Logo */
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  color: inherit;
+}
+nav img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+/* Navigation links */
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: #10FF0B;
+  
+}
+/* Dark mode toggle */
+nav label {
+  display: flex;
+  align-items: center;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+nav input[type="checkbox"] {
+  margin-right: 5px;
 }
+
+/* Dark mode styles */
+nav.dark-mode {
+  background-color: #222222;
+  color: #ffffff;
+}
+
+
+/* Body Styling */
+/* styling of the body section starts here 👇 */
+
+.body-container {
+  display: flex;
+  height: 100;
+  width: 100;
+  padding-top: 10px;
+}
+
+
+/* start of Sidekick menu styles */
+  .sidekick-menu {
+    width: 20%; /* Adjust the width as needed */
+    background-color: #000000; /* Example background color */
+    margin-right: 10px;
+  }
+  
+  .sidekick-menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidekick-menu li {
+    margin:20px;
+    cursor: pointer;
+    color: #ffffff;
+  }
+  
+  .sidekick-menu li:hover {
+    color: #FFF50B; /* Example hover color */
+  }
+
+/* end of sidekick menu styles  */
+/* start of Podcast grid styles */
+.podcast-grid {
+  flex-grow: 1;
+  display: flex; /*grid=>flex*/
+  flex-wrap: wrap;
+  /* grid-template-columns: repeat(auto-fit, 208px); */
+  gap: 10px; /* Adjust the gap as needed */
+  overflow-y: auto; /* Enable vertical scrolling if needed */
+}
+
+.podcast-item {
+  width:208px;
+  height: 208px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.podcast-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.podcast-item h3 {
+  margin-top: 10px;
+}
+
+/* end of Podcast grid styles */
+/* start of Active playing bar styles */
+.active-playing-bar {
+  width: 100%;
+}
+/* end of Active playing bar styles */
