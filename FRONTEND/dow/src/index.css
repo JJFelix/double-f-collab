@@ -1,0 +1,133 @@
+/* Navbar styling */
+/* styling of the navabar section starts here 👇 */
+
+/* Navbar container */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #ffffff; /* Default background color */
+  color: #000000; /* Default text color */
+}
+
+/* Logo */
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  color: inherit;
+}
+nav img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* Navigation links */
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: #10FF0B;
+  
+}
+/* Dark mode toggle */
+nav label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+nav input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Dark mode styles */
+nav.dark-mode {
+  background-color: #222222;
+  color: #ffffff;
+}
+
+
+/* Body Styling */
+/* styling of the body section starts here 👇 */
+
+.body-container {
+  display: flex;
+  height: 100;
+  width: 100;
+  padding-top: 10px;
+}
+
+
+/* start of Sidekick menu styles */
+  .sidekick-menu {
+    width: 20%; /* Adjust the width as needed */
+    background-color: #000000; /* Example background color */
+    margin-right: 10px;
+  }
+  
+  .sidekick-menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidekick-menu li {
+    margin:20px;
+    cursor: pointer;
+    color: #ffffff;
+  }
+  
+  .sidekick-menu li:hover {
+    color: #FFF50B; /* Example hover color */
+  }
+
+/* end of sidekick menu styles  */
+/* start of Podcast grid styles */
+.podcast-grid {
+  flex-grow: 1;
+  display: flex; /*grid=>flex*/
+  flex-wrap: wrap;
+  /* grid-template-columns: repeat(auto-fit, 208px); */
+  gap: 10px; /* Adjust the gap as needed */
+  overflow-y: auto; /* Enable vertical scrolling if needed */
+}
+
+.podcast-item {
+  width:208px;
+  height: 208px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.podcast-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.podcast-item h3 {
+  margin-top: 10px;
+}
+
+/* end of Podcast grid styles */
+/* start of Active playing bar styles */
+.active-playing-bar {
+  width: 100%;
+}
+/* end of Active playing bar styles */
