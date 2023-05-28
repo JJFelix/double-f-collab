@@ -6,13 +6,13 @@ const podcasts = [
   { id: 1, title: 'Podcast 1', image: './podcast1.jpeg' },
   { id: 2, title: 'Podcast 2', image: './podcast1.jpeg' },
   { id: 3, title: 'Podcast 3', image: './podcast1.jpeg' },
-  { id: 1, title: 'Podcast 1', image: './podcast1.jpeg' },
-  { id: 2, title: 'Podcast 2', image: './podcast1.jpeg' },
-  { id: 3, title: 'Podcast 3', image: './podcast1.jpeg' },  
-  { id: 1, title: 'Podcast 1', image: './podcast1.jpeg' },
-  { id: 2, title: 'Podcast 2', image: './podcast1.jpeg' },
-  { id: 3, title: 'Podcast 3', image: './podcast1.jpeg' },
-  { id: 3, title: 'Podcast 3', image: './podcast1.jpeg' },
+  { id: 1, title: 'Podcast 4', image: './podcast1.jpeg' },
+  { id: 2, title: 'Podcast 5', image: './podcast1.jpeg' },
+  { id: 3, title: 'Podcast 6', image: './podcast1.jpeg' },  
+  { id: 1, title: 'Podcast 7', image: './podcast1.jpeg' },
+  { id: 2, title: 'Podcast 8', image: './podcast1.jpeg' },
+  { id: 3, title: 'Podcast 9', image: './podcast1.jpeg' },
+  { id: 3, title: 'Podcast 10', image: './podcast1.jpeg' },
   // Add more podcast objects as needed // mandillahjr edit
 ];
 const Body = () => {
@@ -39,7 +39,6 @@ const Body = () => {
           </div>
         ))}
       </div>
-
     </div>
   );
 };
