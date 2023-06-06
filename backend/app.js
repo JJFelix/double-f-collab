@@ -1,6 +1,6 @@
 const http = require('http')
 
-const server = http.createServer((req, res)=>{
+const server = http.createServer((req, res) => {
     console.log("Sisi ni mafuot")
     res.end(`
         <h1>Welcome to DOW. The place for all your pods</h1>
@@ -9,6 +9,8 @@ const server = http.createServer((req, res)=>{
 })
 
 const PORT = 4290
-server.listen(PORT, ()=>{
+server.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}`)
 })
+
+
